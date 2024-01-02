@@ -16,13 +16,13 @@
 
             let header_text = h.substring(h.indexOf(' ') + 1).replace(/[\[\]]+/g, '');
 
-            let header_link = `[[${tp.file.title}#${header_text}|${header_text}]]`
+            // let header_link = `[[${tp.file.title}#${header_text}|${header_text}]]`
 
   
 
             // prepend block-quote (>), indentation and bullet-point (-)
 
-            return `>${'    '.repeat(header_level - 1) + '- ' + header_link}`;
+            return `${'    '.repeat(header_level - 1) + '- ' + header_text}`;
 
         })
 
